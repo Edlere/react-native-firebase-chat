@@ -11,7 +11,7 @@ export default class Register extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      countryCode: '+91',
+      countryCode: '+51',
       phoneNumber: ''
     }
     this.screenWidth = Dimensions.get('window').width
@@ -38,8 +38,8 @@ export default class Register extends Component {
           style={style.content}
           animation={'flipInX'}
         >
-          <Text style={style.verifyText}>Verify your number</Text>
-          <Text style={style.smsText}>{"You'll get a code via SMS"}</Text>
+          <Text style={style.verifyText}>Verifica tu número</Text>
+          <Text style={style.smsText}>{"Recibirás un código vía SMS"}</Text>
           <PhoneInput
             ref={instance => (this.phone = instance)}
             style={{
@@ -50,7 +50,7 @@ export default class Register extends Component {
               borderWidth: 0.5,
               elevation: 8
             }}
-            initialCountry={'in'}
+            initialCountry={'pe'}
             textStyle={{ fontSize: 18, color: colors.text }}
             flagStyle={{ height: 32, width: 42 }}
             onChangePhoneNumber={phoneNumber =>
@@ -64,14 +64,14 @@ export default class Register extends Component {
             }
           />
           <Text style={style.signinText}>
-            By signin up, You agree to the{' '}
-            {<Text style={style.termsText}>Terms &amp; Conditions</Text>}
+            Registrandote aceptas los términos del curso :D{' '}
+            {<Text style={style.termsText}>Términos &amp; Condiciones</Text>}
           </Text>
           <TouchableOpacity
             style={style.nextButton}
             onPress={() => this.sendOTP()}
           >
-            <Text style={style.footerButtonText}>Send OTP</Text>
+            <Text style={style.footerButtonText}>Enviar código</Text>
           </TouchableOpacity>
         </Animatable.View>
       </View>

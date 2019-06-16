@@ -65,7 +65,7 @@ export default class Verify extends Component {
             value={this.state.verificationCode}
           />
           <Text style={style.signinText}>
-            By signing up, You agree to the{' '}
+            Registrandote aceptas los términos del curso :D{' '}
             {<Text style={style.termsText}>Terms &amp; Conditions</Text>}
           </Text>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
