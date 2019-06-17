@@ -54,8 +54,8 @@ export default class Verify extends Component {
           style={style.content}
           animation={'flipInX'}
         >
-          <Text style={style.verifyText}>Verify your number</Text>
-          <Text style={style.smsText}>Enter verification code</Text>
+          <Text style={style.verifyText}>Verifica tu número de celular</Text>
+          <Text style={style.smsText}>Ingresa tu código :D</Text>
           <TextInput
             placeholder={'Verification Code'}
             keyboardType={'numeric'}
@@ -66,11 +66,11 @@ export default class Verify extends Component {
           />
           <Text style={style.signinText}>
             Registrandote aceptas los términos del curso :D{' '}
-            {<Text style={style.termsText}>Terms &amp; Conditions</Text>}
+            {<Text style={style.termsText}>Términos &amp; Condiciones</Text>}
           </Text>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
             <TouchableOpacity style={style.nextButton} onPress={this.verify}>
-              <Text style={style.footerButtonText}>Verify</Text>
+              <Text style={style.footerButtonText}>Verificar</Text>
             </TouchableOpacity>
           </View>
         </Animatable.View>

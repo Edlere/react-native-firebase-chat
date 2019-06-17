@@ -42,10 +42,10 @@ export default class Profile extends Component {
             source={
               this.props.User.avatarSource !== ''
                 ? {
-                    uri:
-                      (this.state.isFromFile ? 'file:///' : '') +
-                      this.props.User.avatarSource
-                  }
+                  uri:
+                    (this.state.isFromFile ? 'file:///' : '') +
+                    this.props.User.avatarSource
+                }
                 : require('../img/profile.png')
             }
             thumbnail={require('../img/profile.png')}
@@ -54,7 +54,7 @@ export default class Profile extends Component {
         <TextInput
           style={_style.textInput}
           underlineColorAndroid={'transparent'}
-          placeholder={'Name'}
+          placeholder={'Nombre'}
           onChangeText={text => (this.props.User.name = text)}
           value={this.props.User.name}
         />
@@ -65,23 +65,23 @@ export default class Profile extends Component {
             style={{ margin: 24 }}
           />
         ) : (
-          <View
-            style={{
-              backgroundColor: colors.primary,
-              alignSelf: 'center',
-              padding: 8,
-              paddingRight: 32,
-              paddingLeft: 32,
-              borderRadius: 6
-            }}
-          >
-            <TouchableOpacity onPress={this.onSaveOrUpdate}>
-              <Text style={[style.footerButtonText, { fontWeight: '500' }]}>
-                Continue
+            <View
+              style={{
+                backgroundColor: colors.primary,
+                alignSelf: 'center',
+                padding: 8,
+                paddingRight: 32,
+                paddingLeft: 32,
+                borderRadius: 6
+              }}
+            >
+              <TouchableOpacity onPress={this.onSaveOrUpdate}>
+                <Text style={[style.footerButtonText, { fontWeight: '500' }]}>
+                  Continuar
               </Text>
-            </TouchableOpacity>
-          </View>
-        )}
+              </TouchableOpacity>
+            </View>
+          )}
       </View>
     )
   }

@@ -43,7 +43,7 @@ const AppNavigator = createStackNavigator(
       screen: Profile,
       navigationOptions: ({ navigation }) => {
         return {
-          header: <Header nav={navigation} title={'Profile'} absolute back />
+          header: <Header nav={navigation} title={'Perfil'} absolute back />
         }
       }
     },
@@ -54,7 +54,7 @@ const AppNavigator = createStackNavigator(
           header: (
             <Header
               nav={navigation}
-              title={'Conversations'}
+              title={'Conversaciones'}
               rightIcon={'person'}
               absolute
             />
@@ -66,7 +66,7 @@ const AppNavigator = createStackNavigator(
       screen: Contacts,
       navigationOptions: ({ navigation }) => {
         return {
-          header: <Header nav={navigation} title={'Contacts'} back absolute />
+          header: <Header nav={navigation} title={'Contactos'} back absolute />
         }
       }
     },

@@ -31,7 +31,7 @@ class Conversation extends Component {
 
 Conversation.defaultProps = {
   avatarUrl: require('../img/profile.png'),
-  lastMessage: 'Message Here'
+  lastMessage: 'Mensaje aquí'
 }
 
 Conversation.propTypes = {

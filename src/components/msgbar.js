@@ -23,7 +23,7 @@ export default class MsgBar extends Component {
           underlineColorAndroid={'transparent'}
           onChangeText={text => this.setState({ text: text })}
           value={this.state.text}
-          placeholder={'Type here..'}
+          placeholder={'Escribe aquí... :D'}
         />
         <TouchableOpacity style={style.sendIcon} onPress={this.onSend}>
           <Icon name={'send'} color={colors.white} size={20} />

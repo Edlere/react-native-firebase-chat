@@ -35,7 +35,7 @@ class Spalsh extends Component {
           { justifyContent: 'center', alignItems: 'center' }
         ]}
       >
-        <Text>Loading</Text>
+        <Text>Cargando</Text>
       </View>
     )
   }

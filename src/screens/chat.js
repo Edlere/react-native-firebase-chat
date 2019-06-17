@@ -41,8 +41,8 @@ export default class Chat extends Component {
           onContentSizeChange={() =>
             this._chats.scrollToEnd({ animated: true })
           }
-          // onScrollBeginDrag={this.onScrollBeginDrag}
-          // onScrollEndDrag={this.onScrollEndDrag}
+        // onScrollBeginDrag={this.onScrollBeginDrag}
+        // onScrollEndDrag={this.onScrollEndDrag}
         />
         <MsgBar conversationKey={this.conversationKey} />
       </View>
